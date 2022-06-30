@@ -1,18 +1,20 @@
 #include<stdio.h>
 int main()
 {
-    int a[100],i,n,ind;
+    int n,i,odd;
     scanf("%d",&n);
+    int arr[n];
     for(i=0;i<n;i++)
     {
-        scanf("%d",&a[i]);
+        scanf("%d",&arr[i]);
     }
     for(i=0;i<n;i++)
     {
-        if(a[i]%2==0)
+        if(arr[i]%2==0)
         {
-            ind=a[i];
+           odd=arr[i];
         }
     }
-    printf("%d",ind);
-}    
+    printf("%d",odd);
+    return 0;
+}
