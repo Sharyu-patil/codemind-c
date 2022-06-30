@@ -1,10 +1,13 @@
 #include<stdio.h>
 int main()
 {
-    int n,arr[50],i,count=0,k;
-    scanf("%d%d",&n,&k);
+    int n,k,i,count=0;
+    scanf("%d %d",&n,&k);
+    int arr[n];
     for(i=0;i<n;i++)
-    scanf("%d",&arr[i]);
+    {
+        scanf("%d",&arr[i]);
+    }
     for(i=0;i<n;i++)
     {
         if(arr[i]%k==0)
@@ -14,4 +17,4 @@ int main()
     }
     printf("%d",count);
     return 0;
-}    
+}
